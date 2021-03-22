@@ -10,6 +10,8 @@ RUN apt-get update -y && apt-get install -y \
     libfreetype6-dev \
     libjpeg-dev 
   
+RUN docker-php-ext-configure gd --with-jpeg=/usr/lib/x86_64-linux-gnu/
+
 RUN docker-php-ext-install gd
 
 RUN docker-php-ext-install exif
