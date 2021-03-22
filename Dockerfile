@@ -7,7 +7,8 @@ RUN apt-get update -y && apt-get install -y \
     libwebp-dev \
     libjpeg62-turbo-dev \
     libxpm-dev \
-    libfreetype6-dev
+    libfreetype6-dev \
+    libjpeg-dev 
   
 RUN docker-php-ext-install gd
 
